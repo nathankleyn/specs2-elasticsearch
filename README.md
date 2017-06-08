@@ -1,4 +1,4 @@
-# specs2-elasticsearch
+# specs2-elasticsearch [![Build Status](https://travis-ci.org/nathankleyn/specs2-elasticsearch.svg?branch=master)](https://travis-ci.org/nathankleyn/specs2-elasticsearch)
 Small library with a specs2 helper for testing against a local Elasticsearch cluster using elastic4s.
 
 > **Note:** This library is currently pinned against Elasticsearch `1.5.x`, and thus may not be suitable for your use-case. It will be upgraded for later versions of Elasticsearch shortly.
