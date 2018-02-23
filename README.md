@@ -1,7 +1,8 @@
 # specs2-elasticsearch [![Build Status](https://travis-ci.org/nathankleyn/specs2-elasticsearch.svg?branch=master)](https://travis-ci.org/nathankleyn/specs2-elasticsearch)
-Small library with a [specs2](https://github.com/etorreborre/specs2) helper for testing against a local Elasticsearch cluster using elastic4s.
 
-> **Note:** This library is currently pinned against Elasticsearch `1.5.x`, and thus may not be suitable for your use-case. It will be upgraded for later versions of Elasticsearch shortly.
+> ⚠️ **Warning:** This library is currently pinned against Elasticsearch `1.5.x`, and won't be upgraded. This is because Elasticsearch 5.5+ has [removed the method used by this library to start a local node](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/breaking_50_java_api_changes.html#_nodebuilder_removed) ([see this GitHub issue for more info](https://github.com/elastic/elasticsearch/issues/21544)). We recommend you consider using Docker for this task now instead for newest versions of Elasticsearch — [the excellent `docker-it-scala` library by Whisklabs](https://github.com/whisklabs/docker-it-scala) will get you started quickly!
+
+Small library with a [specs2](https://github.com/etorreborre/specs2) helper for testing against a local Elasticsearch cluster using elastic4s.
 
 ## Usage
 
